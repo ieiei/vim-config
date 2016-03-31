@@ -105,6 +105,10 @@ let g:NERDTreeWinPos = "left"
 """"""""""""   YouCompleteMe """""""""""""
 """"""""""""""""""""""""""""""""""""""""""
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+inoremap <expr> <CR> pumvisible()? "\<C-y>":"\<CR>"
+
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
 
 
 """"""""""""""""""""""""""""""""""""""""""
@@ -118,6 +122,8 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 
-colorscheme molokai
-
-
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""  molokai theme  """"""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:molokai_original = 1
+let g:rehash256 = 1

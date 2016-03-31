@@ -1,5 +1,6 @@
 set nu
 set guifont=Monospace:h200
 
-syntax on
+set background=dark
 colorscheme molokai
+set t_Co=256

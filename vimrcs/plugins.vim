@@ -40,8 +40,8 @@ call vundle#begin()
 
     " YouCompleteMe
     Plugin 'Valloric/YouCompleteMe'
+
+    " molokai 
+    Plugin 'tomasr/molokai'
 call vundle#end()            " required
 filetype plugin indent on
-
-
-
