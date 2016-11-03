@@ -91,12 +91,47 @@ let g:airline_symbols.whitespace = 'Ξ'
 """"""""""""   NERDTree    """""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeWinPos = "left"
+let g:NERDTreeIgnore = ['\.pyc$']
+
+
+
+""""""""""""""""""""""""""""""""""""""""""
+""""""""""   NERDCommenter   """""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+"
+" " Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+"
+" " Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+"
+" " Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+"
+" " Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+"
+" " Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+"
+" " Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
 
 
 
 """"""""""""""""""""""""""""""""""""""""""
 """"""""""""   syntastic   """""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 
@@ -120,6 +155,15 @@ let g:go_highlight_structs = 1
 let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""  python-mode  """"""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:pymode_rope = 0
+" let g:pymode_virtualenv = 1
+let g:pymode_virtualenv_path = '/vagrant/beibei/python/env/jenkins'
+let g:pymode_run = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""
