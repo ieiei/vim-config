@@ -25,6 +25,9 @@ call vundle#begin()
     " NERD Tree
     Plugin 'scrooloose/nerdtree'
 
+    " NERD Commenter
+    Plugin 'scrooloose/nerdcommenter'
+
     " Ack 
     Plugin 'mileszs/ack.vim'
 
