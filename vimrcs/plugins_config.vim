@@ -160,10 +160,12 @@ let g:go_highlight_build_constraints = 1
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""  python-mode  """"""""""""""
 """"""""""""""""""""""""""""""""""""""""""
+let g:pymode_python = 'python3'
 let g:pymode_rope = 0
 " let g:pymode_virtualenv = 1
-let g:pymode_virtualenv_path = '/vagrant/beibei/python/env/jenkins'
+" let g:pymode_virtualenv_path = './ENV'
 let g:pymode_run = 1
+let g:pymode_lint_unmodified = 0
 
 
 """"""""""""""""""""""""""""""""""""""""""
@@ -171,3 +173,9 @@ let g:pymode_run = 1
 """"""""""""""""""""""""""""""""""""""""""
 let g:molokai_original = 1
 let g:rehash256 = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""  vim-gitgutter  """"""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:gitgutter_highlight_lines = 0

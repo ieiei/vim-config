@@ -46,5 +46,8 @@ call vundle#begin()
 
     " molokai 
     Plugin 'tomasr/molokai'
+
+    " GitGutter
+    Plugin 'airblade/vim-gitgutter'
 call vundle#end()            " required
 filetype plugin indent on
