@@ -109,9 +109,10 @@ let g:NERDDefaultAlign = 'left'
 "
 " " Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_java = 1
+let g:NERDAltDelims_python = 1
 "
 " " Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCustomDelimiters = { 'c': { 'left': '/*','right': '*/' } }
 "
 " " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
@@ -160,7 +161,7 @@ let g:go_highlight_build_constraints = 1
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""  python-mode  """"""""""""""
 """"""""""""""""""""""""""""""""""""""""""
-let g:pymode_python = 'python3'
+" let g:pymode_python = 'python3'
 let g:pymode_rope = 0
 " let g:pymode_virtualenv = 1
 " let g:pymode_virtualenv_path = './ENV'
