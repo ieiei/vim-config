@@ -42,12 +42,15 @@ call vundle#begin()
     Plugin 'vim-airline/vim-airline-themes'
 
     " YouCompleteMe
-    Plugin 'Valloric/YouCompleteMe'
+    " Plugin 'Valloric/YouCompleteMe'
 
     " molokai 
     Plugin 'tomasr/molokai'
 
     " GitGutter
     Plugin 'airblade/vim-gitgutter'
+
+    " Supertab
+    Plugin 'ervandew/supertab'
 call vundle#end()            " required
 filetype plugin indent on
