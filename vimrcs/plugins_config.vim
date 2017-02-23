@@ -180,3 +180,10 @@ let g:rehash256 = 1
 """""""""""""  vim-gitgutter  """"""""""""
 """"""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_highlight_lines = 0
+
+
+""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""  supertab   """""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:SuperTabNoCompleteBefore = []
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s', ';']
