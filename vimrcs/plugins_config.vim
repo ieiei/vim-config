@@ -186,4 +186,4 @@ let g:gitgutter_highlight_lines = 0
 """"""""""""""  supertab   """""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
 let g:SuperTabNoCompleteBefore = []
-let g:SuperTabNoCompleteAfter = ['^', ',', '\s', ';']
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s', ';', ':']

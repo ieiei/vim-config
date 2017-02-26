@@ -439,3 +439,7 @@ set guifont=Monospace:h200
 " set background=dark
 " colorscheme molokai
 " set t_Co=256
+
+" tell complete to look in the dictionary
+set complete-=k complete+=k
+autocmd FileType python set dictionary=~/Projects/laobe/awesome-vim/dictionaries/python.dict
