@@ -443,3 +443,4 @@ set guifont=Monospace:h200
 " tell complete to look in the dictionary
 set complete-=k complete+=k
 autocmd FileType python set dictionary=~/Projects/laobe/awesome-vim/dictionaries/python.dict
+autocmd FileType c set dictionary=~/Projects/laobe/awesome-vim/dictionaries/c.dict
