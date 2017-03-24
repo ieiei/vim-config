@@ -187,3 +187,9 @@ let g:gitgutter_highlight_lines = 0
 """"""""""""""""""""""""""""""""""""""""""
 let g:SuperTabNoCompleteBefore = []
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s', ';', ':']
+
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""  vim-ansible-yaml  """""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:ansible_options = {'ignore_blank_lines': 0}

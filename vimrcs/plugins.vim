@@ -52,5 +52,8 @@ call vundle#begin()
 
     " Supertab
     Plugin 'ervandew/supertab'
+
+    " vim-ansible-yaml
+    Plugin 'chase/vim-ansible-yaml'
 call vundle#end()            " required
 filetype plugin indent on
