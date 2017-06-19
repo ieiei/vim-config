@@ -58,5 +58,11 @@ call vundle#begin()
 
     " Easymotion
     Plugin 'easymotion/vim-easymotion'
+
+    " vim-ansible-yaml
+    Plugin 'chase/vim-ansible-yaml'
+
+    " vim-json 
+    Plugin 'elzr/vim-json'
 call vundle#end()            " required
 filetype plugin indent on

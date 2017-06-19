@@ -432,6 +432,7 @@ endfunction
 "endif
 
 
+"""""""""""""""""""""""""""""""  seeeeeeeellllllllllf  """""""""""""""""""""""""
 set tabstop=4
 set nu
 set guifont=Monospace:h200
