@@ -52,5 +52,11 @@ call vundle#begin()
 
     " Supertab
     Plugin 'ervandew/supertab'
+
+    " Surround
+    Plugin 'tpope/vim-surround'
+
+    " Easymotion
+    Plugin 'easymotion/vim-easymotion'
 call vundle#end()            " required
 filetype plugin indent on
