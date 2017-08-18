@@ -91,7 +91,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 """"""""""""   NERDTree    """""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeWinPos = "left"
-let g:NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__*']
 
 
 
