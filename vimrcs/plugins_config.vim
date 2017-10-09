@@ -112,7 +112,7 @@ let g:NERDAltDelims_java = 1
 let g:NERDAltDelims_python = 1
 "
 " " Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/*','right': '*/' } }
+let g:NERDCustomDelimiters = { 'c': { 'left': '//', 'leftAlt': '/*','rightAlt': '*/' } }
 "
 " " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
