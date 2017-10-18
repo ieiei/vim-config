@@ -435,6 +435,7 @@ endfunction
 """""""""""""""""""""""""""""""  seeeeeeeellllllllllf  """""""""""""""""""""""""
 set tabstop=4
 set nu
+set relativenumber
 set guifont=Monospace:h200
 
 " set background=dark
