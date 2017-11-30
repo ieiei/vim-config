@@ -446,3 +446,4 @@ set guifont=Monospace:h200
 set complete-=k complete+=k
 autocmd FileType python set dictionary=~/Projects/laobe/awesome-vim/dictionaries/python.dict
 autocmd FileType c set dictionary=~/Projects/laobe/awesome-vim/dictionaries/c.dict
+autocmd FileType java set dictionary=~/Projects/laobe/awesome-vim/dictionaries/java.dict
