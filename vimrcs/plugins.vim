@@ -11,7 +11,7 @@ call vundle#begin()
     Plugin 'fatih/vim-go'
 
     " python-mode.
-    Plugin 'klen/python-mode'
+    " Plugin 'klen/python-mode'
 
     " Track the engine.
     Plugin 'SirVer/ultisnips'
@@ -64,5 +64,8 @@ call vundle#begin()
 
     " vim-json 
     Plugin 'elzr/vim-json'
+
+    " cvim
+    Plugin 'vim-scripts/c.vim'
 call vundle#end()            " required
 filetype plugin indent on
