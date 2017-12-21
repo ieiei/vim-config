@@ -67,5 +67,8 @@ call vundle#begin()
 
     " cvim
     Plugin 'vim-scripts/c.vim'
+
+    " vim-scala
+    Plugin 'derekwyatt/vim-scala'
 call vundle#end()            " required
 filetype plugin indent on
