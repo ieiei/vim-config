@@ -1,3 +1,15 @@
+" File              : /Users/laobe/Projects/laobe/awesome-vim/vimrcs/plugins_config.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
+" File              : Projects/laobe/awesome-vim/vimrcs/plugins_config.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
+" File              : plugins_config.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
+" File              : plugins_config.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
 """"""""""""""""""""""""""""""""""""""""""
 """"""""""""  vim-airline  """""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
@@ -92,6 +104,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 """"""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeIgnore = ['\.pyc$', '__pycache__*']
+let g:NERDTreeWinSize = 20
 
 
 

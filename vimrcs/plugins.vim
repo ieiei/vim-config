@@ -1,3 +1,12 @@
+" File              : /Users/laobe/Projects/laobe/awesome-vim/vimrcs/plugins.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
+" File              : laobe/awesome-vim/vimrcs/plugins.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
+" File              : laobe/awesome-vim/vimrcs/plugins.vim
+" Date              : 22.02.2018
+" Last Modified Date: 22.02.2018
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""""  vundle  """""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
@@ -14,7 +23,7 @@ call vundle#begin()
     " Plugin 'klen/python-mode'
 
     " Track the engine.
-    Plugin 'SirVer/ultisnips'
+    " Plugin 'SirVer/ultisnips'
 
     " Snippets are separated from the engine. Add this if you want them:
     Plugin 'honza/vim-snippets'
@@ -70,5 +79,15 @@ call vundle#begin()
 
     " vim-scala
     Plugin 'derekwyatt/vim-scala'
+
+    " vim-fugitive
+    Plugin 'tpope/vim-fugitive'
+
+    " " lexima.vim
+    " Plugin 'cohama/lexima.vim'
+
+    " unite.vim
+    Plugin 'Shougo/unite.vim'
+
 call vundle#end()            " required
 filetype plugin indent on
