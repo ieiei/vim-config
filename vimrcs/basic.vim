@@ -447,5 +447,9 @@ set complete-=k complete+=k
 autocmd FileType python set dictionary=~/Projects/laobe/awesome-vim/dictionaries/python.dict
 autocmd FileType c set dictionary=~/Projects/laobe/awesome-vim/dictionaries/c.dict
 autocmd FileType java set dictionary=~/Projects/laobe/awesome-vim/dictionaries/java.dict
+autocmd FileType c setlocal shiftwidth=2 tabstop=2
+autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
+autocmd FileType cmake setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 nnoremap <F9> :!%:p
