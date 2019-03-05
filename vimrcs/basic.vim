@@ -451,5 +451,6 @@ autocmd Filetype scala setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType c setlocal shiftwidth=2 tabstop=2
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2
 autocmd FileType cmake setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 nnoremap <F9> :!%:p
