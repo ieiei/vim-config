@@ -123,6 +123,7 @@ let g:NERDDefaultAlign = 'left'
 " " Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_java = 1
 let g:NERDAltDelims_python = 1
+let g:NERDAltDelims_pyrex = 1
 "
 " " Add your own custom formats or override the defaults
 let g:NERDCustomDelimiters = { 'c': { 'left': '//', 'leftAlt': '/*','rightAlt': '*/' } }
@@ -147,6 +148,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
 
 
@@ -200,6 +203,7 @@ let g:gitgutter_highlight_lines = 0
 """"""""""""""""""""""""""""""""""""""""""
 let g:SuperTabNoCompleteBefore = []
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s', ';', ':']
+let g:SuperTabClosePreviewOnPopupClose = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""
