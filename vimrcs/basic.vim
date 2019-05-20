@@ -454,3 +454,9 @@ autocmd FileType cmake setlocal shiftwidth=2 tabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 nnoremap <F9> :!%:p
+:map [[ ?{<CR>w99[{
+:map ][ /}<CR>b99]}
+:map ]] j0[[%/{<CR>
+:map [] k$][%?}<CR>
+
+set nocscopeverbose

@@ -102,6 +102,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 """"""""""""""""""""""""""""""""""""""""""
 """"""""""""   NERDTree    """""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
+nmap <F7> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeIgnore = ['\.pyc$', '__pycache__*']
 let g:NERDTreeWinSize = 20
@@ -214,3 +215,15 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 """"""""""""""  vim-json  """"""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
 setlocal foldmethod=syntax
+
+""""""""""""""""""""""""""""""""""""""""""
+""""""""""""  vim-easy-align """""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""  tagbar  """""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+nmap <F8> :TagbarToggle<CR>
+nmap <F3> :tabprevious<CR>

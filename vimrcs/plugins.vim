@@ -89,5 +89,11 @@ call vundle#begin()
     " unite.vim
     Plugin 'Shougo/unite.vim'
 
+    " vim cmake syntax
+    Plugin 'pboettch/vim-cmake-syntax'
+
+    " junegunn/vim-easy-align
+    Plugin 'junegunn/vim-easy-align'
+
 call vundle#end()            " required
 filetype plugin indent on
