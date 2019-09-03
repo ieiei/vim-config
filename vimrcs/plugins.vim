@@ -56,9 +56,6 @@ call vundle#begin()
     " molokai 
     Plugin 'tomasr/molokai'
 
-    " GitGutter
-    Plugin 'airblade/vim-gitgutter'
-
     " Supertab
     Plugin 'ervandew/supertab'
 
@@ -94,6 +91,9 @@ call vundle#begin()
 
     " junegunn/vim-easy-align
     Plugin 'junegunn/vim-easy-align'
+
+    " dbgx/lldb.nvim
+    Plugin 'dbgx/lldb.nvim'
 
 call vundle#end()            " required
 filetype plugin indent on

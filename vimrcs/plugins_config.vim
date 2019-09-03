@@ -96,6 +96,11 @@ let g:airline_symbols.whitespace = 'Ξ'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
 
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""   ack    """""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:ack_default_options = " --ignore-file=match:cscope"
+
 
 
 
@@ -104,9 +109,8 @@ let g:airline_symbols.whitespace = 'Ξ'
 """"""""""""""""""""""""""""""""""""""""""
 nmap <F7> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "left"
-let g:NERDTreeIgnore = ['\.pyc$', '__pycache__*']
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__*', 'cscope*']
 let g:NERDTreeWinSize = 20
-
 
 
 """"""""""""""""""""""""""""""""""""""""""
@@ -151,8 +155,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
-let g:syntastic_cpp_include_dirs = [ '/Users/Laobe/Projects/github.com/google/leveldb/include']
-
+let g:syntastic_cpp_include_dirs = ['/Users/laobe/Projects/github.com/google/leveldb/include', '/Users/laobe/Projects/cpp/learn/database/arangodb-3.4.0/lib', '/Users/laobe/Projects/github.com/arangodb/arangodb/lib', '/Users/laobe/Projects/cpp/bin/rocksdb/include', '/Users/laobe/Projects/github.com/arangodb/velocypack/include']
 
 
 """"""""""""""""""""""""""""""""""""""""""
