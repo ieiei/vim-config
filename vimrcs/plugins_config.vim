@@ -153,24 +153,20 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_cpp_checkers = ['clang_tidy'] 
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_auto_refresh_includes = 1
+let g:syntastic_cpp_clang_tidy_args = '-checks=*'
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
-let g:syntastic_cpp_include_dirs = ['/Users/laobe/Projects/github.com/google/leveldb/include', '/Users/laobe/Projects/cpp/learn/database/arangodb-3.4.0/lib', '/Users/laobe/Projects/github.com/arangodb/arangodb/lib', '/Users/laobe/Projects/cpp/bin/rocksdb/include', '/Users/laobe/Projects/github.com/arangodb/velocypack/include']
-
-
-""""""""""""""""""""""""""""""""""""""""""
-""""""""""""   YouCompleteMe """""""""""""
-""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-inoremap <expr> <CR> pumvisible()? "\<C-y>":"\<CR>"
-
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+let g:syntastic_cpp_compiler_options = '-std=c++14 -stdlib=libc++'
+let g:syntastic_cpp_include_dirs = []
+let g:syntastic_c_config_file = '.clang'
 
 
 """"""""""""""""""""""""""""""""""""""""""
 """"""""""""""""  vim-go  """"""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
+let g:go_version_warning = 0
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -231,3 +227,16 @@ nmap ga <Plug>(EasyAlign)
 """"""""""""""""""""""""""""""""""""""""""
 nmap <F8> :TagbarToggle<CR>
 nmap <F3> :tabprevious<CR>
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""  vim-clang  """"""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:clang_c_options = '-std=gnu14'
+let g:clang_cpp_options = '-std=c++14 -stdlib=libc++'
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""  rainbow  """"""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:rainbow_active = 1
+
+let g:C_InsertFileHeader = 'no'

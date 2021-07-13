@@ -50,9 +50,6 @@ call vundle#begin()
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
 
-    " YouCompleteMe
-    " Plugin 'Valloric/YouCompleteMe'
-
     " molokai 
     Plugin 'tomasr/molokai'
 
@@ -72,7 +69,12 @@ call vundle#begin()
     Plugin 'elzr/vim-json'
 
     " cvim
-    Plugin 'vim-scripts/c.vim'
+    " Plugin 'vim-scripts/c.vim'
+    Plugin 'vim-scripts/a.vim'
+    Plugin 'WolfgangMehner/c-support'
+
+    " clang-format
+    Plugin 'rhysd/vim-clang-format'
 
     " vim-scala
     Plugin 'derekwyatt/vim-scala'
@@ -84,16 +86,26 @@ call vundle#begin()
     " Plugin 'cohama/lexima.vim'
 
     " unite.vim
-    Plugin 'Shougo/unite.vim'
+    " Plugin 'Shougo/unite.vim'
 
     " vim cmake syntax
-    Plugin 'pboettch/vim-cmake-syntax'
+    " Plugin 'pboettch/vim-cmake-syntax'
 
     " junegunn/vim-easy-align
     Plugin 'junegunn/vim-easy-align'
 
     " dbgx/lldb.nvim
     Plugin 'dbgx/lldb.nvim'
+
+    " chazy/cscope_maps
+    Plugin 'chazy/cscope_maps'
+
+    " justmao945/vim-clang
+    Plugin 'justmao945/vim-clang'
+
+    Plugin 'luochen1990/rainbow'
+
+    Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 filetype plugin indent on

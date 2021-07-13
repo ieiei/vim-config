@@ -461,3 +461,4 @@ nnoremap <F9> :!%:p
 :map [] k$][%?}<CR>
 
 set nocscopeverbose
+set cino=N-s
