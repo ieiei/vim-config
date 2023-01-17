@@ -19,9 +19,6 @@ call vundle#begin()
     " vim-go.
     Plugin 'fatih/vim-go'
 
-    " python-mode.
-    " Plugin 'klen/python-mode'
-
     " Track the engine.
     " Plugin 'SirVer/ultisnips'
 
@@ -44,7 +41,7 @@ call vundle#begin()
     Plugin 'kien/ctrlp.vim'
 
     " syntastic
-    Plugin 'scrooloose/syntastic'
+    " Plugin 'scrooloose/syntastic'
 
     " airline
     Plugin 'vim-airline/vim-airline'
@@ -66,18 +63,18 @@ call vundle#begin()
     Plugin 'chase/vim-ansible-yaml'
 
     " vim-json 
-    Plugin 'elzr/vim-json'
+    " Plugin 'elzr/vim-json'
 
     " cvim
     " Plugin 'vim-scripts/c.vim'
     Plugin 'vim-scripts/a.vim'
-    Plugin 'WolfgangMehner/c-support'
+    " Plugin 'WolfgangMehner/c-support'
 
     " clang-format
     Plugin 'rhysd/vim-clang-format'
 
     " vim-scala
-    Plugin 'derekwyatt/vim-scala'
+    " Plugin 'derekwyatt/vim-scala'
 
     " vim-fugitive
     Plugin 'tpope/vim-fugitive'
@@ -98,7 +95,7 @@ call vundle#begin()
     Plugin 'dbgx/lldb.nvim'
 
     " chazy/cscope_maps
-    Plugin 'chazy/cscope_maps'
+    " Plugin 'chazy/cscope_maps'
 
     " justmao945/vim-clang
     Plugin 'justmao945/vim-clang'
@@ -106,6 +103,18 @@ call vundle#begin()
     Plugin 'luochen1990/rainbow'
 
     Plugin 'jiangmiao/auto-pairs'
+
+    Plugin 'rust-lang/rust.vim'
+
+    Plugin 'dense-analysis/ale'
+
+    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+
+    Plugin 'yegappan/mru'
+
+    Plugin 'junegunn/fzf'
+    Plugin 'junegunn/fzf.vim'
+
 
 call vundle#end()            " required
 filetype plugin indent on

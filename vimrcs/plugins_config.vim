@@ -152,7 +152,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['pylint']
+" let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_cpp_checkers = ['clang_tidy'] 
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
@@ -240,3 +240,20 @@ let g:clang_cpp_options = '-std=c++14 -stdlib=libc++'
 let g:rainbow_active = 1
 
 let g:C_InsertFileHeader = 'no'
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""  ale """""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:ale_linters = {'rust': ['analyzer'], 'python':['pyright']}
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""  coc """""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
