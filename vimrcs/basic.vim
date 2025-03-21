@@ -460,5 +460,8 @@ nnoremap <F9> :!%:p
 :map ]] j0[[%/{<CR>
 :map [] k$][%?}<CR>
 
-set nocscopeverbose
+:map [b :bprevious<CR>
+:map ]b :bnext<CR>
+
+" set nocscopeverbose
 set cino=N-s

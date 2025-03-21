@@ -41,7 +41,7 @@ call vundle#begin()
     Plugin 'kien/ctrlp.vim'
 
     " syntastic
-    " Plugin 'scrooloose/syntastic'
+    Plugin 'scrooloose/syntastic'
 
     " airline
     Plugin 'vim-airline/vim-airline'
@@ -69,9 +69,6 @@ call vundle#begin()
     " Plugin 'vim-scripts/c.vim'
     Plugin 'vim-scripts/a.vim'
     " Plugin 'WolfgangMehner/c-support'
-
-    " clang-format
-    Plugin 'rhysd/vim-clang-format'
 
     " vim-scala
     " Plugin 'derekwyatt/vim-scala'
@@ -106,7 +103,7 @@ call vundle#begin()
 
     Plugin 'rust-lang/rust.vim'
 
-    Plugin 'dense-analysis/ale'
+    " Plugin 'dense-analysis/ale'
 
     Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -114,6 +111,16 @@ call vundle#begin()
 
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
+
+    " Plugin 'github/copilot.vim'
+
+    Plugin 'xavierd/clang_complete'
+
+    " Plugin 'octol/vim-cpp-enhanced-highlight'
+
+    " clang-format
+    Plugin 'rhysd/vim-clang-format'
+
 
 
 call vundle#end()            " required

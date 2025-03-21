@@ -31,8 +31,8 @@ function! AirlineThemePatch(palette)
   endif
 endfunction
 
-let g:airline_powerline_fonts=0
-let g:airline_mode_map = {} 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 let g:airline_mode_map = {
     \ '__' : '-',
     \ 'n'  : 'N',
@@ -56,6 +56,8 @@ let g:airline_mode_map = {
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 
+let g:AutoPairsMapCR = 0
+imap <silent><CR> <CR><Plug>AutoPairsReturn
 
 
 if !exists('g:airline_symbols')
@@ -148,19 +150,19 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-" let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_cpp_checkers = ['clang_tidy'] 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
+" " let g:syntastic_python_checkers = ['pylint']
+" let g:syntastic_cpp_checkers = ['clang_tidy']
 let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_auto_refresh_includes = 1
-let g:syntastic_cpp_clang_tidy_args = '-checks=*'
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = '-std=c++14 -stdlib=libc++'
-let g:syntastic_cpp_include_dirs = []
-let g:syntastic_c_config_file = '.clang'
+" let g:syntastic_cpp_auto_refresh_includes = 1
+" let g:syntastic_cpp_clang_tidy_args = '-checks=*'
+" let g:syntastic_cpp_compiler = 'clang++'
+" let g:syntastic_cpp_compiler_options = '-std=c++14 -stdlib=libc++ -Wc++17-extensions'
+" let g:syntastic_cpp_include_dirs = []
+" let g:syntastic_c_config_file = '.clang'
 
 
 """"""""""""""""""""""""""""""""""""""""""
@@ -231,8 +233,14 @@ nmap <F3> :tabprevious<CR>
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""  vim-clang  """"""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
-let g:clang_c_options = '-std=gnu14'
-let g:clang_cpp_options = '-std=c++14 -stdlib=libc++'
+" let g:clang_c_options = '-std=gnu14'
+" let g:clang_cpp_options = '-std=c++14 -stdlib=libc++ -Wc++17-extensions'
+
+""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""  clang-completion  """"""""""""""""
+""""""""""""""""""""""""""""""""""""""""""
+let g:clang_library_path = "/usr/local/clang+llvm-15.0.0/lib"
+" let g:clang_cpp_options = '-std=c++14 -stdlib=libc++ -Wc++17-extensions'
 
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""  rainbow  """"""""""""""""
@@ -244,7 +252,28 @@ let g:C_InsertFileHeader = 'no'
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""""""  ale """""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = {'rust': ['analyzer'], 'python':['pyright']}
+
+" let g:ale_linters = {'rust': ['analyzer'], 'python':['mypy'], 'cuda': ['clang'], 'cpp': ['clang'], 'c': ['clang']}
+let g:ale_linters = {'rust': ['analyzer'], 'python':['mypy']}
+let g:ale_c_clangd_executable = '/usr/bin/clangd'
+let g:ale_cpp_cc_options = "-std=c++17 -Wall"
+" let g:ale_cpp_clangd_options = "-std=c++17 -Wall -I/Users/Laobe/Projects/pybind/python_example/src/common"
+" let g:ale_cpp_clang_options = join(readfile('.clang_complete'), ' ')
+let g:ale_c_clang_options = '@.clang_complete'
+let g:ale_cpp_clang_options = '@.clang_complete'
+let g:ale_c_clangd_options = '@.clang_complete'
+let g:ale_cpp_clangd_options = '@.clang_complete'
+" " let g:ale_fixers = {'cpp': ['clang-format']}
+" " let g:ale_linters_ignore = {'cpp': ['clangcheck', 'clangtidy']}
+" " set completeopt=menu,menuone,preview,noselect,noinsert
+" let g:ale_completion_enabled = 1
+" nmap gd :ALEGoToDefinition<CR>
+" nmap <silent> gy <Plug>(ale_go_to_type_definition)
+" nmap <silent> gi <Plug>(ale_go_to_type_implementation)
+" nmap <silent> gr ALEFindReferences<CR>
+" nmap <silent> <C-k> <Plug>(ale_previous)
+" nmap <silent> <C-j> <Plug>(ale_next)
+
 
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""""""  coc """""""""""""""""""
@@ -257,3 +286,22 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+
+" copilot navigation
+imap <silent> <C-j> <Plug>(copilot-next)
+imap <silent> <C-k> <Plug>(copilot-previous)
+imap <silent> <C-\> <Plug>(copilot-dismiss)
+
+" Auto-Pairs
+let g:AutoPairsShortcutToggle = '<F3>'
+
+" Rainbow Parentheses
+let g:rainbow_active = 1
+
+" MRU (Most Recently Used Files)
+nnoremap <Leader>m :MRU<CR>
+
+" Miscellaneous
+nnoremap <C-s> :w<CR>
+set mouse=a
