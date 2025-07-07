@@ -10,118 +10,121 @@
 """"""""""""""""""""""""""""""""""""""""""
 """""""""""""""  vundle  """""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
-set nocompatible
+" set nocompatible
 filetype off
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-    Plugin 'VundleVim/Vundle.vim'
+set rtp+=~/.vim/autoload/plug.vim
+call plug#begin()
+    " Plug 'VundleVim/Vundle.vim'
     " vim-go.
-    Plugin 'fatih/vim-go'
+    Plug 'fatih/vim-go'
 
     " Track the engine.
-    " Plugin 'SirVer/ultisnips'
+    " Plug 'SirVer/ultisnips'
 
     " Snippets are separated from the engine. Add this if you want them:
-    Plugin 'honza/vim-snippets'
+    Plug 'honza/vim-snippets'
 
     " tagbar
-    Plugin 'majutsushi/tagbar'
+    Plug 'majutsushi/tagbar'
 
     " NERD Tree
-    Plugin 'scrooloose/nerdtree'
+    Plug 'scrooloose/nerdtree'
 
     " NERD Commenter
-    Plugin 'scrooloose/nerdcommenter'
+    Plug 'scrooloose/nerdcommenter'
 
     " Ack 
-    Plugin 'mileszs/ack.vim'
+    Plug 'mileszs/ack.vim'
 
     " ctrlp
-    Plugin 'kien/ctrlp.vim'
+    Plug 'kien/ctrlp.vim'
 
     " syntastic
-    Plugin 'scrooloose/syntastic'
+    Plug 'scrooloose/syntastic'
 
     " airline
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
     " molokai 
-    Plugin 'tomasr/molokai'
+    Plug 'tomasr/molokai'
 
     " Supertab
-    Plugin 'ervandew/supertab'
+    Plug 'ervandew/supertab'
 
     " Surround
-    Plugin 'tpope/vim-surround'
+    Plug 'tpope/vim-surround'
 
     " Easymotion
-    Plugin 'easymotion/vim-easymotion'
+    Plug 'easymotion/vim-easymotion'
 
     " vim-ansible-yaml
-    Plugin 'chase/vim-ansible-yaml'
+    Plug 'chase/vim-ansible-yaml'
 
     " vim-json 
-    " Plugin 'elzr/vim-json'
+    " Plug 'elzr/vim-json'
 
     " cvim
-    " Plugin 'vim-scripts/c.vim'
-    Plugin 'vim-scripts/a.vim'
-    " Plugin 'WolfgangMehner/c-support'
+    " Plug 'vim-scripts/c.vim'
+    Plug 'vim-scripts/a.vim'
+    " Plug 'WolfgangMehner/c-support'
 
     " vim-scala
-    " Plugin 'derekwyatt/vim-scala'
+    " Plug 'derekwyatt/vim-scala'
 
     " vim-fugitive
-    Plugin 'tpope/vim-fugitive'
+    Plug 'tpope/vim-fugitive'
 
     " " lexima.vim
-    " Plugin 'cohama/lexima.vim'
+    " Plug 'cohama/lexima.vim'
 
     " unite.vim
-    " Plugin 'Shougo/unite.vim'
+    " Plug 'Shougo/unite.vim'
 
     " vim cmake syntax
-    " Plugin 'pboettch/vim-cmake-syntax'
+    " Plug 'pboettch/vim-cmake-syntax'
 
     " junegunn/vim-easy-align
-    Plugin 'junegunn/vim-easy-align'
+    Plug 'junegunn/vim-easy-align'
 
     " dbgx/lldb.nvim
-    Plugin 'dbgx/lldb.nvim'
+    Plug 'dbgx/lldb.nvim'
 
     " chazy/cscope_maps
-    " Plugin 'chazy/cscope_maps'
+    " Plug 'chazy/cscope_maps'
 
     " justmao945/vim-clang
-    Plugin 'justmao945/vim-clang'
+    Plug 'justmao945/vim-clang'
 
-    Plugin 'luochen1990/rainbow'
+    Plug 'luochen1990/rainbow'
 
-    Plugin 'jiangmiao/auto-pairs'
+    Plug 'jiangmiao/auto-pairs'
 
-    Plugin 'rust-lang/rust.vim'
+    Plug 'rust-lang/rust.vim'
 
-    " Plugin 'dense-analysis/ale'
+    " Plug 'dense-analysis/ale'
 
-    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    Plugin 'yegappan/mru'
+    Plug 'yegappan/mru'
 
-    Plugin 'junegunn/fzf'
-    Plugin 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
 
-    " Plugin 'github/copilot.vim'
+    " Plug 'github/copilot.vim'
 
-    Plugin 'xavierd/clang_complete'
+    Plug 'xavierd/clang_complete'
 
-    " Plugin 'octol/vim-cpp-enhanced-highlight'
+    " Plug 'octol/vim-cpp-enhanced-highlight'
 
     " clang-format
-    Plugin 'rhysd/vim-clang-format'
+    Plug 'rhysd/vim-clang-format'
+
+
+    " Plug 'benlubas/molten-nvim'
 
 
 
-call vundle#end()            " required
+call plug#end()            " required
 filetype plugin indent on
