@@ -1,4 +1,4 @@
-" File              : /Users/laobe/Projects/laobe/awesome-vim/vimrcs/plugins.vim
+" File              : /Users/muli/Projects/laobe/awesome-vim/vimrcs/plugins.vim
 " Date              : 22.02.2018
 " Last Modified Date: 22.02.2018
 " File              : laobe/awesome-vim/vimrcs/plugins.vim
@@ -41,7 +41,7 @@ call plug#begin()
     Plug 'kien/ctrlp.vim'
 
     " syntastic
-    Plug 'scrooloose/syntastic'
+    " Plug 'scrooloose/syntastic'
 
     " airline
     Plug 'vim-airline/vim-airline'
@@ -103,7 +103,7 @@ call plug#begin()
 
     Plug 'rust-lang/rust.vim'
 
-    " Plug 'dense-analysis/ale'
+    Plug 'dense-analysis/ale'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -114,7 +114,7 @@ call plug#begin()
 
     " Plug 'github/copilot.vim'
 
-    Plug 'xavierd/clang_complete'
+    " Plug 'xavierd/clang_complete'
 
     " Plug 'octol/vim-cpp-enhanced-highlight'
 
@@ -123,6 +123,7 @@ call plug#begin()
 
 
     " Plug 'benlubas/molten-nvim'
+    Plug 'nvim-treesitter/nvim-treesitter'
 
 
 

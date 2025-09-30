@@ -254,7 +254,8 @@ let g:C_InsertFileHeader = 'no'
 """"""""""""""""""""""""""""""""""""""""""
 
 " let g:ale_linters = {'rust': ['analyzer'], 'python':['mypy'], 'cuda': ['clang'], 'cpp': ['clang'], 'c': ['clang']}
-let g:ale_linters = {'rust': ['analyzer'], 'python':['mypy']}
+let g:ale_fix_on_save = 1
+let g:ale_linters = {'rust': ['analyzer'], 'python':['pylint']}
 let g:ale_c_clangd_executable = '/usr/bin/clangd'
 let g:ale_cpp_cc_options = "-std=c++17 -Wall"
 " let g:ale_cpp_clangd_options = "-std=c++17 -Wall -I/Users/Laobe/Projects/pybind/python_example/src/common"
